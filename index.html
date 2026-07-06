@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | ValuableChoice</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#0f172a;
+            color:#fff;
+            overflow:hidden;
+        }
+
+        body::before{
+            content:"";
+            position:absolute;
+            width:400px;
+            height:400px;
+            background:#2563eb;
+            filter:blur(150px);
+            top:-100px;
+            left:-100px;
+            opacity:.6;
+        }
+
+        body::after{
+            content:"";
+            position:absolute;
+            width:400px;
+            height:400px;
+            background:#06b6d4;
+            filter:blur(150px);
+            bottom:-100px;
+            right:-100px;
+            opacity:.5;
+        }
+
+        .container{
+            position:relative;
+            text-align:center;
+            z-index:2;
+        }
+
+        h1{
+            font-size:70px;
+            font-weight:700;
+            letter-spacing:3px;
+            animation:fadeIn 1.2s ease;
+        }
+
+        p{
+            margin-top:15px;
+            font-size:18px;
+            color:#cbd5e1;
+            animation:fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(20px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        @media(max-width:768px){
+            h1{
+                font-size:48px;
+            }
+
+            p{
+                font-size:16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Coming Soon</h1>
+    <p>We're working on something amazing.</p>
+</div>
+
+</body>
+</html>
